@@ -1,7 +1,7 @@
 /* Reset default body and link styles */
 body {
     font-family: 'Arial', sans-serif;
-    background: black;
+    background: white;
     margin: 0;
     padding: 0;
     display: flex;
@@ -17,9 +17,9 @@ body {
     margin-bottom: 10px;
     text-align: center;
     font-weight: bold;
-    border: 2px solid black;
+    border: 2px solid rgb(255, 255, 255);
     border-inline-width: 50px;
-    background-color: black;
+    background-color: white;
 }
 .task-datetime {
     display: block;          /* Places the datetime on the next line */
@@ -80,7 +80,7 @@ nav a:visited {
 
 /* To-do app styles */
 .todo-app {
-    background: black;
+    background: white;
     width: 400px;
     padding: 20px;
     border-radius: 10px;
@@ -96,7 +96,7 @@ nav a:visited {
 
 .header h1 {
     font-weight: 300;
-    color: white;
+    color: #000000;
     margin-bottom: 20px;
 }
 
