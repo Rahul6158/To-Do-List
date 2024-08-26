@@ -1,7 +1,7 @@
 /* Reset default body and link styles */
 body {
     font-family: 'Arial', sans-serif;
-    background: #ffffff;
+    background: white;
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,6 +9,23 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column; /* Center content vertically and horizontally */
+}
+
+#date-time {
+    font-size: 20px;
+    color: #0051ff;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid rgb(255, 255, 255);
+    border-inline-width: 50px;
+    background-color: white;
+}
+.task-datetime {
+    display: block;          /* Places the datetime on the next line */
+    font-size: 12px;         /* Smaller font size */
+    color: rgb(0, 9, 42);           /* Yellow color */
+    margin-top: 5px;         /* Add some space between the task text and datetime */
 }
 
 /* Section for mobile devices */
@@ -63,7 +80,7 @@ nav a:visited {
 
 /* To-do app styles */
 .todo-app {
-    background: #ffffff;
+    background: white;
     width: 400px;
     padding: 20px;
     border-radius: 10px;
