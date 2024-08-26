@@ -19,7 +19,7 @@ body {
     font-weight: bold;
     border: 2px solid rgb(255, 255, 255);
     border-inline-width: 50px;
-    background-color: white;
+    background-color: black
 }
 .task-datetime {
     display: block;          /* Places the datetime on the next line */
