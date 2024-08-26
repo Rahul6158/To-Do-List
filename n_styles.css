@@ -1,7 +1,7 @@
 /* Reset default body and link styles */
 body {
     font-family: 'Arial', sans-serif;
-    background: #f7f7f7;
+    background: #ffffff;
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,6 +11,24 @@ body {
     flex-direction: column; /* Center content vertically and horizontally */
 }
 
+/* Section for mobile devices */
+@media (max-width: 600px) {
+    body {
+        justify-content: flex-start; /* Align items at the top */
+        align-items: flex-start; /* Align items at the left */
+        padding-top: 20px; /* Add some padding at the top */
+        height: auto; /* Allow the body to adjust height according to content */
+    }
+
+    .todo-app {
+        width: 100%;
+        max-width: 500px; /* Set a max width */
+        margin: 0 10px; /* Add horizontal margin */
+        padding: 20px;
+    }
+}
+
+/* Styles for larger screens */
 nav {
     display: flex;
     justify-content: center; /* Center the navigation buttons */
@@ -43,13 +61,14 @@ nav a:visited {
     color: #e0e0e0; /* Light text color for visited links */
 }
 
-/* The rest of your existing CSS... */
+/* To-do app styles */
 .todo-app {
-    background: #fff;
+    background: #fce9fa;
     width: 400px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center the todo app horizontally */
 }
 
 .header {
@@ -60,7 +79,7 @@ nav a:visited {
 
 .header h1 {
     font-weight: 300;
-    color: #333;
+    color: #000000;
     margin-bottom: 20px;
 }
 
@@ -68,7 +87,7 @@ nav a:visited {
     width: 100%;
     padding: 15px;
     font-size: 18px;
-    border: 1px solid #ddd;
+    border: 1px solid #006727;
     border-radius: 10px;
     box-sizing: border-box;
     outline: none;
@@ -83,11 +102,11 @@ nav a:visited {
 .task-list li {
     padding: 15px;
     font-size: 18px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #000000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #fafafa;
+    background: #fff316;
     margin-bottom: 10px;
     border-radius: 8px;
     cursor: move;
@@ -108,7 +127,8 @@ nav a:visited {
 
 .task-list li.completed .task-content {
     text-decoration: line-through;
-    color: #00ff3c;
+    color: #000000;
+    background-color: #2bff00;
 }
 
 .task-list button {
@@ -116,15 +136,44 @@ nav a:visited {
     border: none;
     cursor: pointer;
     font-size: 18px;
-    color: #888;
+    color: #111111;
     transition: color 0.3s;
 }
 
 .task-list button:hover {
-    color: #333;
+    color: #000000;
 }
 
 .drag-over {
-    border: 2px dashed #bbb;
+    border: 2px dashed #9e0000;
     background: #e0e0e0;
 }
+
+/* Additional responsive styles */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column; /* Stack navigation buttons vertically */
+        margin-bottom: 10px; /* Reduce space between nav and main content */
+    }
+
+    nav a {
+        width: 100%; /* Make nav links take full width on small screens */
+        font-size: 14px; /* Slightly smaller font size */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .header h1 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+        margin-bottom: 10px;
+    }
+
+    .header input[type="text"] {
+        font-size: 16px; /* Adjust font size for input */
+        padding: 10px; /* Adjust padding for input */
+    }
+
+    .task-list li {
+        font-size: 16px; /* Adjust font size for tasks */
+    }
+}
+
