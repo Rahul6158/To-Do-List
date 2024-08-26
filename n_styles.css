@@ -1,0 +1,130 @@
+/* Reset default body and link styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* Center content vertically and horizontally */
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Center the navigation buttons */
+    gap: 10px; /* Space between the navigation buttons */
+    margin-bottom: 20px; /* Space between nav and the main content */
+}
+
+nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* White text color */
+    background-color: #4caf50; /* Green background color */
+    font-size: 16px; /* Font size */
+    padding: 10px 20px; /* Padding inside the button */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: 500; /* Slightly bolder font */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+    width: 150px; /* Fixed width for consistency */
+    text-align: center; /* Center text */
+}
+
+nav a:hover {
+    background-color: #388e3c; /* Darker green on hover */
+    color: #e0e0e0; /* Light text color on hover */
+}
+
+nav a:visited {
+    color: #e0e0e0; /* Light text color for visited links */
+}
+
+/* The rest of your existing CSS... */
+.todo-app {
+    background: #fff;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header h1 {
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.header input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+.task-list li {
+    padding: 15px;
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fafafa;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: move;
+    transition: background 0.3s;
+}
+
+.task-list li .task-content {
+    flex: 1;
+    margin-right: 10px;
+    white-space: normal;
+    word-break: break-word;
+}
+
+.task-list li button {
+    margin-left: 10px;
+    flex-shrink: 0;
+}
+
+.task-list li.completed .task-content {
+    text-decoration: line-through;
+    color: #00ff3c;
+}
+
+.task-list button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #888;
+    transition: color 0.3s;
+}
+
+.task-list button:hover {
+    color: #333;
+}
+
+.drag-over {
+    border: 2px dashed #bbb;
+    background: #e0e0e0;
+}
