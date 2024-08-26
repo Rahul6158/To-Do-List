@@ -63,7 +63,7 @@ nav a:visited {
 
 /* To-do app styles */
 .todo-app {
-    background: #fce9fa;
+    background: #ffffff;
     width: 400px;
     padding: 20px;
     border-radius: 10px;
@@ -106,7 +106,7 @@ nav a:visited {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #fff316;
+    background: #f3f2f2;
     margin-bottom: 10px;
     border-radius: 8px;
     cursor: move;
@@ -127,8 +127,8 @@ nav a:visited {
 
 .task-list li.completed .task-content {
     text-decoration: line-through;
-    color: #000000;
-    background-color: #2bff00;
+    color: #00ff2f;
+    /*background-color: #2bff00;*/
 }
 
 .task-list button {
